@@ -1,3 +1,400 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+/*desktop*/
+
+    body {
+      width: 100%;
+    }
+
+  .headernav {
+      display: flex;
+      flex-direction: row;
+      padding-top: 3%;
+      padding-bottom: 4%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      width: 75%;
+    }
+
+    nav a {
+    	color: gray;
+    	text-decoration: none;
+      display: flex;
+    }
+
+    .logo {
+    	width: 100%;
+    }
+
+    header {
+      text-align: center;
+      display: flex;
+      justify-content: space-around
+    }
+
+    h1 {
+      font-size: 70px;
+      margin-top: 60px;
+    }
+
+    button {
+    	position: relative;
+    	background-color: Transparent;
+    	background-repeat:no-repeat;
+    	border-color: black;
+    	font-size: 22px;
+    	width: 360px;
+      justify-content: center;
+    }
+
+    .circular-img {
+    	width: 360px;
+      justify-content: right;
+    }
+
+    .top {
+      display: flex;
+    }
+
+    .top1 {
+          margin-top: 3%;
+          margin-bottom: 3%;
+          display: flex;
+          width: 97%;
+          margin-left: auto;
+    }
+
+    .middle-img {
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 90%;
+    }
+
+    .bottom {
+      display: flex;
+    }
+
+    .bottom-row {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      display: flex;
+      width: 97%;
+      margin-left: auto;
+    }
+
+
+    footer {
+      margin-left: 3%;
+    }
+
+    .phone-number {
+    	line-height: 4em;
+    }
+
+    .copyright {
+    	text-align: center;
+    	line-height: 10em;
+    }
+
+@media (max-width: 800px) {
+
+  .headernav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 4%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    width: 100%;
+  }
+
+  nav a {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+  }
+
+  .headerlogo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 25%;
+  }
+
+  header {
+    text-align: center;
+    padding-bottom: 5%;
+  }
+
+  .header1 {
+    padding-left: 15%;
+  }
+
+  h1 {
+    font-size: 70px;
+    margin-top: 50px;
+  }
+
+  button {
+    position: relative;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border-color: black;
+    font-size: 22px;
+    width: 360px;
+    justify-content: center;
+  }
+
+  .circular-img {
+    display: none;
+  }
+
+  .top {
+    display: flex;
+  }
+
+  .top1 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    width: 97%;
+    margin-left: auto;
+  }
+
+  .middle-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .bottom-row {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    width: 97%;
+    margin-left: auto;
+  }
+
+
+  footer {
+    margin-left: 3.5%;
+  }
+
+  .phone-number {
+    line-height: 4em;
+  }
+
+  .copyright {
+    text-align: center;
+    line-height: 10em;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .headernav {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 4%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    width: 100%;
+    border-bottom: 1px gray solid;
+  }
+
+  nav a {
+    color: gray;
+    text-decoration: none;
+		justify-content: center;
+    padding: 15px;
+    border-top: 1px gray solid;
+  }
+
+  .headerlogo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 35%;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .header1 {
+    padding-left: 10%;
+  }
+
+  h1 {
+    font-size: 55px;
+    margin-top: 30px;
+  }
+
+  button {
+    position: relative;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border-color: black;
+    font-size: 22px;
+    width: 360px;
+    justify-content: center;
+  }
+
+  .circular-img {
+    display: none;
+  }
+
+  .top {
+    display: flex;
+  }
+
+  .top1 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  .top2 {
+    margin-top: 5%;
+  }
+
+  .middle-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .bottom-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 15px;
+    width: 95%;
+    margin-left: auto;
+  }
+
+  .bottom-row2 {
+    margin-top: 5%;
+  }
+
+  .bottom-row3 {
+    margin-top: 5%;
+  }
+
+  footer {
+    margin-left: 5%;
+  }
+
+  .phone-number {
+    line-height: 4em;
+  }
+
+  .copyright {
+    text-align: center;
+    line-height: 10em;
+  }
+}
